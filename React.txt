@@ -1,0 +1,18 @@
+-> React is a library that helps us build user interfaces from components.
+-> We can assemble smaller components to build large applications.
+
+COMPONENTS 
+-> components combine HTML and logic into a single reusable function.
+
+JSX
+-> JSX is a syntax extension for javascript.
+-> It allows us to write markup that looks like HTML directly inside of JS
+-> It's not legal JS on its own, so it must be transpiled.
+
+
+Rules of JSX
+-> Must explicitly close self closing elements like <br/>
+-> components can only return a single element. 
+
+React Fragment
+->  <> </>
