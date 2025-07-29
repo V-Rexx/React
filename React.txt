@@ -16,3 +16,7 @@ Rules of JSX
 
 React Fragment
 ->  <> </>
+
+Props
+-> Props are like arguments that we can provide to our components.
+-> We use props to make configurable components.
