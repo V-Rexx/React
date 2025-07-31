@@ -20,3 +20,11 @@ React Fragment
 Props
 -> Props are like arguments that we can provide to our components.
 -> We use props to make configurable components.
+
+key Props
+-> In React, the key prop is a special attribute that you must 
+include when rendering a list of elements, especially in loops like .map().
+
+-> The key prop helps React identify which items have changed, 
+been added, or removed. It makes the reconciliation process faster 
+and more efficient.

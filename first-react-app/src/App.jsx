@@ -6,6 +6,15 @@ import ListPicker from './ListPicker';
 import DoubleDice from './DoubleDice';
 import Heading from './Heading';
 import ColorList from './ColorList';
+import ShoppingList from './ShoppingList';
+
+
+const data = [
+  {id: 1, item: "eggs", quantity: 12, completed: false},
+  {id: 2, item: "chicken breasts", quantity: 1, completed: true},
+  {id: 3, item: "milk", quantity: 4, completed: false},
+  {id: 4, item: "veggies", quantity: 10, completed: true},
+]
 
 function App() {
   return (
@@ -27,7 +36,10 @@ function App() {
       <DoubleDice />
       <DoubleDice /> */}
 
-      <ColorList colors={["red", "green", "blue", "teal"]}/> 
+      {/* <ColorList colors={["red", "green", "blue", "teal"]}/>  */}
+
+      <ShoppingList items={data}/>
+     
 
     </div>
   );
