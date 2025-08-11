@@ -1,4 +1,4 @@
-
+import './Lucky7.css'
 import { useState } from 'react';
 import {getRolls} from "./utils";
 import Dice from './Dice';
