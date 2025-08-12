@@ -3,12 +3,16 @@ import { useState } from 'react';
 import {getRolls} from "./utils";
 import Dice from './Dice';
 
-export default function Lucky7({numDice=2, goal=7}) {
+export default function Lucky7({title = "Lucky 7", numDice=2, winCheck}) {
     const [dice, setDice] = useState(getRolls(numDice));
+    const isWinner = winCheck(dice);
+    const roll = () => setDice(getRolls(numDice));
+    
     return(
         <main>
-            <h1>Lucky {goal}</h1>
+            <h1>{title} {isWinner && "YOU WIN!"}</h1>
             <Dice dice={dice}/>
+            <button onClick={roll}>Re-Roll Dice</button>
         </main>
     );
 }

@@ -6,13 +6,15 @@ function d6(){
 
 // Get n rools => [num,...] 
 
-export function getRolls(n) {
+function getRolls(n) {
     return Array.from({length: n}, () => d6());
 }
 
 
 //Get sum of nums
 
-export function sum(nums) {
+function sum(nums) {
     return nums.reduce((prev, cur) => prev+cur, 0);
 }
+
+export { d6, getRolls, sum };
