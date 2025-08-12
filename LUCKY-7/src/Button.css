@@ -1,0 +1,19 @@
+.Button {
+    background-color: slateblue;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+
+.Button:hover {
+    background-color: rgb(77, 65, 154);
+}
+
+.Button:active {
+    background-color: rgb(77, 65, 154);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
